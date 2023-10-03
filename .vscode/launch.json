@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroservedisciplinaApplication<microservedisciplina>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "br.edu.univille.microservedisciplina.MicroservedisciplinaApplication",
+            "projectName": "microservedisciplina",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
