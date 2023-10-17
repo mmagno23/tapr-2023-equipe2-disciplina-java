@@ -12,26 +12,46 @@ public class Disciplina {
     @GeneratedValue
     public  String idDisciplina ;
     @PartitionKey
-    public int numeroDiscis ;
+    public int numeroDisciplina ;
     public int cargaHoraria ;
     public int semestre ;
+
+    public Disciplina(String idDisciplina, int cargaHoraria, int semestre) {
+        this.idDisciplina = idDisciplina;
+        this.cargaHoraria = cargaHoraria;
+        this.semestre = semestre;
+    }
 
     public String getIdDisciplina() {
         return idDisciplina;
     }
+
     public void setIdDisciplina(String idDisciplina) {
         this.idDisciplina = idDisciplina;
     }
+
     public int getCargaHoraria() {
         return cargaHoraria;
     }
+
     public void setCargaHoraria(int cargaHoraria) {
         this.cargaHoraria = cargaHoraria;
     }
+
     public int getSemestre() {
         return semestre;
     }
+
     public void setSemestre(int semestre) {
         this.semestre = semestre;
+    }
+
+    @Override
+    public String toString() {
+        return "Disciplina{" +
+                "idDisciplina='" + idDisciplina + '\'' +
+                ", cargaHoraria=" + cargaHoraria +
+                ", semestre=" + semestre +
+                '}';
     }
 }
