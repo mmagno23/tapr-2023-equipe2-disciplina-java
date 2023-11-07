@@ -23,5 +23,10 @@ public class DisciplinaServiceImpl implements DisciplinaService{
         return listaDisciplinas;
         
     }
+
+    @Override
+    public Disciplina save(Disciplina disciplina) {
+        return repository.save(disciplina);
+    }
     
 }

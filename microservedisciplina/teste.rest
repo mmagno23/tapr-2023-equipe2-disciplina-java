@@ -1,1 +1,13 @@
 GET http://localhost:8080/api/v1/disciplina
+
+###
+
+POST http://localhost:8080/api/v1/disciplina
+content-type: application/json
+
+{
+    "idDisciplina": "2",
+    "nomeDisciplina": "topicos avancados",
+    "cargaHoraria": 72,
+    "semestre": 6
+}

@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Disciplina$DisciplinaCRUD",
+            "request": "launch",
+            "mainClass": "br.edu.univille.microservedisciplina.entity.Disciplina$DisciplinaCRUD",
+            "projectName": "microservedisciplina"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-MicroservedisciplinaApplication<microservedisciplina>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
