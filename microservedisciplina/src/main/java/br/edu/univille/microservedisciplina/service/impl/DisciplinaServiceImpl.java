@@ -28,5 +28,34 @@ public class DisciplinaServiceImpl implements DisciplinaService{
     public Disciplina save(Disciplina disciplina) {
         return repository.save(disciplina);
     }
+
+    @Override
+    public Disciplina update(String id, Disciplina disciplina) {
+        var buscaDisciplinaAntiga = repository.findById(id);
+        if (buscaDisciplinaAntiga.isPresent()){
+            var disciplinaAntiga = buscaDisciplinaAntiga.get();
+
+            //Atualizar cada atributo do objeto antigo 
+            disciplinaAntiga.setNomeDisciplina(disciplina.getNomeDisciplina());
+            disciplinaAntiga.setCargaHoraria(disciplina.getCargaHoraria());            
+            disciplinaAntiga.setSemestre(disciplina.getSemestre());                        
+            return repository.save(disciplinaAntiga);
+        }
+        return null;
+    }
+    
+    @Override
+    public Disciplina delete(String id) {
+        var buscaDisciplina = repository.findById(id);
+        if (buscaDisciplina.isPresent()){
+            var disciplina = buscaDisciplina.get();
+
+            repository.delete(disciplina);
+
+            return disciplina;
+        }
+        return null;
+    }
     
 }
+

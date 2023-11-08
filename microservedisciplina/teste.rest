@@ -6,8 +6,24 @@ POST http://localhost:8080/api/v1/disciplina
 content-type: application/json
 
 {
-    "idDisciplina": "2",
-    "nomeDisciplina": "topicos avancados",
+    "nomeDisciplina": "POO",
     "cargaHoraria": 72,
     "semestre": 6
+}
+###
+PUT  http://localhost:8080/api/v1/disciplina
+Content-Type: application/json
+{
+    "idDisciplina":  "2",
+    "nomeDisciplina": "topicos acccc",
+    "cargaHoraria": 48,
+    "semestre": 5   
+}
+
+###
+DELETE http://localhost:8080/api/v1/disciplina
+Content-Type: application/json
+{
+    "idDisciplina": "a4e392fd-32e3-465b-835e-6cfb73520f11",
+    
 }
