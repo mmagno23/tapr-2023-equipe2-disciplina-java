@@ -11,19 +11,23 @@ content-type: application/json
     "semestre": 6
 }
 ###
-PUT  http://localhost:8080/api/v1/disciplina
+GET http://localhost:8080/api/v1/disciplina/bb1c999e-ae9c-4316-9fb9-8be87642dc27
+###
+PUT  http://localhost:8080/api/v1/disciplina/a4e392fd-32e3-465b-835e-6cfb73520f11
 Content-Type: application/json
+
 {
-    "idDisciplina":  "2",
+    
     "nomeDisciplina": "topicos acccc",
     "cargaHoraria": 48,
     "semestre": 5   
 }
 
 ###
-DELETE http://localhost:8080/api/v1/disciplina
+DELETE http://localhost:8080/api/v1/disciplina/2
 Content-Type: application/json
+
 {
-    "idDisciplina": "a4e392fd-32e3-465b-835e-6cfb73520f11",
+    "idDisciplina": "2",
     
 }

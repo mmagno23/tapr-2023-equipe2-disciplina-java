@@ -23,6 +23,13 @@ public class DisciplinaServiceImpl implements DisciplinaService{
         return listaDisciplinas;
         
     }
+    @Override
+    public Disciplina getById(String id) {
+        var disciplina = repository.findById(id);
+        if(disciplina.isPresent())
+            return disciplina.get();
+        return null;
+    }
 
     @Override
     public Disciplina save(Disciplina disciplina) {

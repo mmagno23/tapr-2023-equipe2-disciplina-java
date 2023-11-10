@@ -36,6 +36,16 @@ public class DisciplinaAPIController {
 
 
     }
+    @GetMapping("/{id}")
+    public ResponseEntity<Disciplina> buscarDisciplina(@PathVariable("id")  String id){
+        var disciplina = service.getById(id);
+        if(disciplina == null){
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return 
+            new ResponseEntity<Disciplina>
+            (disciplina, HttpStatus.OK);
+    }
 
     @PostMapping
     public ResponseEntity<Disciplina> incluirDisciplina(@RequestBody Disciplina disciplina){
