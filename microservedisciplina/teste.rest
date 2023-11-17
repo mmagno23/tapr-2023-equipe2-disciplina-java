@@ -11,9 +11,9 @@ content-type: application/json
     "semestre": 6
 }
 ###
-GET http://localhost:8080/api/v1/disciplina/bb1c999e-ae9c-4316-9fb9-8be87642dc27
+GET http://localhost:8080/api/v1/disciplina/7a207ffb-6605-4ad0-8637-bf7ef31f7803
 ###
-PUT  http://localhost:8080/api/v1/disciplina/a4e392fd-32e3-465b-835e-6cfb73520f11
+PUT  http://localhost:8080/api/v1/disciplina/7a207ffb-6605-4ad0-8637-bf7ef31f7803
 Content-Type: application/json
 
 {
@@ -24,7 +24,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/api/v1/disciplina/2
+DELETE http://localhost:8080/api/v1/disciplina/7a207ffb-6605-4ad0-8637-bf7ef31f7803
 Content-Type: application/json
 
 {
