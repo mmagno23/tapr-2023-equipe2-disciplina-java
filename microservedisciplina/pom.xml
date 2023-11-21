@@ -84,4 +84,16 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+	<dependency>
+      <groupId>io.dapr</groupId>
+      <artifactId>dapr-sdk</artifactId>
+      <version>1.10.0</version>
+    </dependency>
+    <!-- Dapr's SDK integration with SpringBoot (optional). -->
+    <dependency>
+      <groupId>io.dapr</groupId>
+      <artifactId>dapr-sdk-springboot</artifactId>
+      <version>1.10.0</version>
+    </dependency>
 </project>
